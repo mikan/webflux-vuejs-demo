@@ -29,7 +29,11 @@ class IndexHandler {
 
     @Bean
     fun indexRoutes(): RouterFunction<ServerResponse> {
-        return RouterFunctions.route(RequestPredicates.GET("/"), HandlerFunction { get(it) })
+        val handler = HandlerFunction { get(it) }
+        return RouterFunctions.route(RequestPredicates.GET("/"), handler)
+                .andRoute(RequestPredicates.GET("/page"), handler)
+                .andRoute(RequestPredicates.GET("/page/{sub1}"), handler)
+                .andRoute(RequestPredicates.GET("/page/{sub1}/{sub2}"), handler)
     }
 
     fun get(request: ServerRequest): Mono<ServerResponse> {
