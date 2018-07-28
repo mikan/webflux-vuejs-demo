@@ -1,5 +1,7 @@
 # webflux-vuejs-demo
 
+[Vue.js を Spring WebFlux でホストする際のプロジェクト構成を考える](https://mikan.github.io/2018/07/28/desigining-project-layout-of-vuejs-that-serving-on-spring-webflux/)で紹介したサンプルコード (vue create 版) です。Quasar Framework 版は [webflux-quasar-demo](https://github.com/mikan/webflux-quasar-demo) をご覧ください。
+
 ### Project setup
 
 ```
