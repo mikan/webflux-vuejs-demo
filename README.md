@@ -1,21 +1,37 @@
 # webflux-vuejs-demo
 
-## Project setup
+### Project setup
+
 ```
-npm install
+./gradlew npm_install
 ```
 
 ### Compiles and hot-reloads for development
+
 ```
-npm run serve
+./gradlew npm_run_serve
 ```
 
 ### Compiles and minifies for production
+
 ```
-npm run build
+./gradlew npm_run_build
 ```
 
 ### Lints and fixes files
+
 ```
-npm run lint
+./gradlew npm_run_lint
+```
+
+### Serves by WebFlux
+
+```
+./gradlew npm_run_build bootRun
+```
+
+### Builds a JAR file
+
+```
+./gradlew npm_run_build build
 ```

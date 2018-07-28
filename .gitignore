@@ -19,3 +19,16 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw*
+
+# Gradle
+.gradle
+build
+
+# IntelliJ
+.idea
+*.iml
+out
+
+# Frontend output for backend
+/backend/src/main/resources/static
+
